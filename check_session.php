@@ -13,7 +13,8 @@
                 console.log(response);
                 if (response.data.status == 'success') {
                     // Jika session masih aktif, arahkan ke halaman dashboard.php
-
+                    const nama = response.data.name || 'Default Name';
+                    localStorage.setItem('nama', nama);
                 } else {
                     // Jika session tidak aktif, lakukan yang sesuai 
                     window.location.href = 'login.php';

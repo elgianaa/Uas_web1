@@ -5,10 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="gambar/logo.png" />
     <title>Login Page</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-info">
+        <a href="#" class="navbar-brand text-white" onclick="home()"> Kelompok 3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label=Toggle navigation>
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" onclick="register()">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        function home() {
+            window.location.href = "index.php";
+        }
+
+        function register() {
+            window.location.href = "register.php";
+        }
+    </script>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">

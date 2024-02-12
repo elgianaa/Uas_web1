@@ -7,10 +7,32 @@
     <title>Informasi Anggota</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/styles.css?v=<?php echo time(); ?>">
+    <link rel="shortcut icon" href="gambar/logo.png" />
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-info">
+        <a href="#" class="navbar-brand text-white" onclick="home()"> Kelompok 3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label=Toggle navigation>
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" onclick="login()">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <script>
+        function home() {
+            window.location.href = "index.php";
+        }
+
+        function login() {
+            window.location.href = "login.php";
+        }
+
         document.addEventListener("DOMContentLoaded", function() {
             function index() {
                 window.location.href = "index.php";
@@ -50,7 +72,7 @@
 
             <div class="col-md-6 mb-4"> <!-- Ubah col-md-4 menjadi col-md-6 -->
                 <div id="myCard">
-                    <img src="gambar/Fitr.jpg" class="card-img-top" alt="Fitri">
+                    <img src="gambar/Fitri.jpg" class="card-img-top" alt="Fitri">
                     <div class="card-body">
                         <h2 class="card-title">Fitri</h2>
                         <p class="card-text">Mahasiswa</p>
